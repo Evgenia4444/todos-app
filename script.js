@@ -13,7 +13,7 @@ if(todos) {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    addTodo(todo);
+    addTodo();
 
 });
 
@@ -50,7 +50,7 @@ function addTodo(todo) {
         })
 
 
-        todos.appendChild(todoEl);
+        todosUL.appendChild(todoEl);
 
         input.value = "";
 
